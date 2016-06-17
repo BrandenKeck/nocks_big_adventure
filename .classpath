@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="NocksBigAdventure/lib/native"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="lib" path="res"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/jinput-2.0.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/ibxm.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/jinput.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/jnlp.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/jogg-0.0.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/jorbis-0.0.15.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/lwjgl.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/lwjgl_util.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/lwjgl_util_applet.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/natives-linux.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/natives-mac.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/natives-windows.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/slick.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/slick-examples.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/workspace/NocksBigAdventure/lib/tinylinepp.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
