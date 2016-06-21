@@ -22,9 +22,9 @@ public class Mouse extends MouseAdapter{
 			switch(MainGame.state){
 			case MENU:
 				if(rect.intersects(MainGame.getInstance().getMenu().p)){
-					MainGame.prevState=StateClass.BOSS3;
-					MainGame.state = StateClass.BOSS3;
-					MainGame.nextState=StateClass.BOSS3;
+					MainGame.prevState=StateClass.LEVEL1;
+					MainGame.state = StateClass.LEVEL1;
+					MainGame.nextState=StateClass.LEVEL1;
 					MainGame.add = new Adder();
 				}
 				/*else if(rect.intersects(MainGame.getInstance().getMenu().o);

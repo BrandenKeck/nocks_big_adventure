@@ -36,7 +36,7 @@ public class Environment {
 	public static Rectangle[] rightDamageBound = new Rectangle[500];
 	public static Rectangle[] topDamageBound = new Rectangle[500];
 	public static Rectangle[] bottomDamageBound = new Rectangle[500];
-	private int damageTicker;
+	private int damageTicker = 0;
 	
 	public static BufferedImage[] platformImg = new BufferedImage[500];
 	public static boolean[] rplatform = new boolean[500];
@@ -208,7 +208,7 @@ public class Environment {
 			}
 			break;
 		}
-		
+		System.out.println(paralax);
 		if(BGx/10<(paralax.getWidth()-MainGame.xSize) && BGy/10<(paralax.getHeight()-MainGame.ySize)){
 			g.drawImage(paralax.getSubimage((int)(BGx/10), (int)(BGy/10), 1920, 1080), 0, 0, (int) (MainGame.xSize*MainGame.xScalingFactor), (int) (MainGame.ySize*MainGame.yScalingFactor), null);
 		}

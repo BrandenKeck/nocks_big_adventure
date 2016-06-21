@@ -17,11 +17,11 @@ public class SpriteHandler {
 	private int goalTicker = 1;
 	
 	public void renderPlayer(Graphics g){
-		g.drawImage(Keys.character, player.x, player.y, (int) MainGame.xScalingFactor*128, (int) MainGame.yScalingFactor*200, null);
+		g.drawImage(Keys.character, player.x, player.y, (int) MainGame.xScalingFactor*Keys.character.getWidth(), (int) MainGame.yScalingFactor*Keys.character.getHeight(), null);
 	}
 	
 	public void renderWalking(Graphics g){
-		g.drawImage(player.walking(), player.x-player.xOffset, player.y, (int) MainGame.xScalingFactor*128, (int) MainGame.yScalingFactor*200, null);
+		g.drawImage(player.walking(), player.x-player.xOffset, player.y, (int) MainGame.xScalingFactor*player.walking().getWidth(), (int) MainGame.yScalingFactor*player.walking().getHeight(), null);
 	}
 	
 	public void renderJump(Graphics g){

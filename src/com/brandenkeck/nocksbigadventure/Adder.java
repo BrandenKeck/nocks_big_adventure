@@ -11,6 +11,8 @@ private Bosses bosses = new Bosses();
 public Adder(){
 	switch(MainGame.nextState){
 		case LEVEL1:
+			ResourceManager.allLevelsImage();
+			ResourceManager.level1Image();
 			environment.removeAll();
 			environment.addFloor(ResourceManager.floorWood, (int) (MainGame.xScalingFactor*32), 26, 1, 0);
 			environment.addFloor(ResourceManager.floorRoad, (int) (MainGame.xScalingFactor*864), 5000, 2, 1);
@@ -53,6 +55,8 @@ public Adder(){
 			break;
 			
 		case BOSS1:
+			ResourceManager.nullifyImages();
+			ResourceManager.boss1Image();
 			environment.removeAll();
 			environment.addFloor(ResourceManager.floorRoad, 0, 100, 2, 0);
 			bosses.spawnGG((int) (MainGame.xScalingFactor*1500), (int) (MainGame.yScalingFactor*500), 500);
@@ -61,8 +65,11 @@ public Adder(){
 			}
 			break;
 		case LEVEL2:
+			ResourceManager.nullifyImages();
+			ResourceManager.level2Image();
 			environment.removeAll();
 			environment.addLightning((int) (500*MainGame.xScalingFactor), (int) (500*MainGame.yScalingFactor));
+			environment.addLightning((int) (300*MainGame.xScalingFactor), (int) (500*MainGame.yScalingFactor));
 			environment.addPlatform(ResourceManager.floorBrick, 0, 0, 790, 1, 2, 0);
 			environment.addDamage(ResourceManager.DBlue, (int) (23008*MainGame.xScalingFactor), (int) (568*MainGame.yScalingFactor), 4, 500, 450);
 			environment.addPlatform(ResourceManager.floorBrick, 0, (int) (700*MainGame.xScalingFactor), 20, 2, 2, 0);
@@ -96,6 +103,8 @@ public Adder(){
 			environment.addGoal((int) (23500*MainGame.xScalingFactor), (int) (200*MainGame.yScalingFactor));
 			break;
 		case BOSS2:
+			ResourceManager.nullifyImages();
+			ResourceManager.boss2Image();
 			environment.removeAll();
 			environment.addPlatform(ResourceManager.floorBrick, (int) (-2000*MainGame.xScalingFactor), (int) (2800*MainGame.yScalingFactor), 500, 20, 2, 0);
 
@@ -113,12 +122,17 @@ public Adder(){
 			bosses.spawnSkull((int) (800*MainGame.xScalingFactor), (int) (-400*MainGame.yScalingFactor), 3000);
 			break;
 		case LEVEL3:
+			ResourceManager.nullifyImages();
+			ResourceManager.level3Image();
 			environment.removeAll();
 			environment.addStar((int) (500*MainGame.xScalingFactor), (int) (700*MainGame.yScalingFactor));
 			environment.addFloor(ResourceManager.floorPlain, 0, 5000, 2, 0);
+			environment.addDamage(ResourceManager.DGreen, (int) (0*MainGame.xScalingFactor), (int) (0*MainGame.yScalingFactor), 1, 5, 0);
 			environment.addGoal((int) (34000*MainGame.xScalingFactor), (int) (200*MainGame.yScalingFactor));
 			break;
 		case BOSS3:
+			ResourceManager.nullifyImages();
+			ResourceManager.boss3Image();
 			environment.removeAll();
 			bosses.spawnOrb((int) (250*MainGame.xScalingFactor), (int) (50*MainGame.yScalingFactor), 20);
 			environment.addPlatform(ResourceManager.floorPlain, (int) (0*MainGame.xScalingFactor), (int) (3000*MainGame.yScalingFactor), 500, 20, 2, 33);
@@ -165,6 +179,8 @@ public Adder(){
 			
 			break;
 		case LEVEL4:
+			ResourceManager.nullifyImages();
+			ResourceManager.level4Image();
 			environment.removeAll();
 			environment.addTime(700, 4200);
 			environment.addPlatform(ResourceManager.floorL6, (int) (0*MainGame.xScalingFactor), (int) (5000*MainGame.yScalingFactor), 10, 1, 1, 0);
@@ -563,6 +579,8 @@ public Adder(){
 			environment.addGoal((int) (27000*MainGame.xScalingFactor), (int) (200*MainGame.yScalingFactor));
 			break;
 		case BOSS4:
+			ResourceManager.nullifyImages();
+			ResourceManager.boss4Image();
 			environment.removeAll();
 			environment.addFloor(ResourceManager.floorL6, (int) (0*MainGame.xScalingFactor), 1000, 1, 0);
 			bosses.spawnSJ0();
@@ -571,7 +589,10 @@ public Adder(){
 			}
 			break;
 		case LEVEL5:
+			ResourceManager.nullifyImages();
+			ResourceManager.level5Image();
 			environment.removeAll();
+			environment.addDamage(ResourceManager.DRed, (int) (0*MainGame.xScalingFactor), (int) (0*MainGame.yScalingFactor), 1, 5, 0);
 			environment.addPlatform(ResourceManager.floorSky, (int) (0*MainGame.xScalingFactor), (int) (49968*MainGame.yScalingFactor), 70, 10, 1, 0);
 			environment.addPlatform(ResourceManager.floorSky, (int) (500*MainGame.xScalingFactor), (int) (49940*MainGame.yScalingFactor), 10, 2, 1, 1);
 			environment.addPlatform(ResourceManager.floorSky, (int) (500*MainGame.xScalingFactor), (int) (49940*MainGame.yScalingFactor), 10, 2, 1, 2);
@@ -610,6 +631,8 @@ public Adder(){
 			
 			break;
 		case BOSS5:
+			ResourceManager.nullifyImages();
+			ResourceManager.boss5Image();
 			environment.removeAll();
 			bosses.spawnOmega((int) (250*MainGame.xScalingFactor), (int) (50*MainGame.yScalingFactor), 80000);
 			environment.addPlatform(ResourceManager.floorSky, (int) (0*MainGame.xScalingFactor), (int) (1080*MainGame.yScalingFactor), 500, 5, 1, 0);

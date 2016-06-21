@@ -16,7 +16,6 @@ import javax.swing.JWindow;
 public class MainGame extends Canvas implements Runnable {
 
 	private static Toolkit tk = Toolkit.getDefaultToolkit();
-	private static BufferedImage LS, GraphicSheet, CurrentGraphic;
 	public static int xSize = ((int) tk.getScreenSize().getWidth());
 	public static int ySize = ((int) tk.getScreenSize().getHeight());
 	public static double xScalingFactor = MainGame.xSize/1920;
@@ -67,28 +66,17 @@ public class MainGame extends Canvas implements Runnable {
 	public void loadProperties(Graphics g){
 		Keys.lastKey = 3;
 		resources.Loading();
+		state = StateClass.LOADING;
 		
-		LS = ResourceManager.Loading;
+		/*LS = ResourceManager.Loading;
 		JWindow img1 = new JWindow();
-		JWindow img2 = new JWindow();
-		JWindow img3 = new JWindow();
-		img1.getContentPane().add(new JLabel(new ImageIcon(resources.SpriteObj(LS, 1920, 1080, 1, 1))));
-		img1.setBounds(0, 0, xSize, ySize);
-		img2.getContentPane().add(new JLabel(new ImageIcon(resources.SpriteObj(LS, 1920, 1080, 2, 1))));
-		img2.setBounds(0, 0, xSize, ySize);
-		img3.getContentPane().add(new JLabel(new ImageIcon(resources.SpriteObj(LS, 1920, 1080, 3, 1))));
-		img3.setBounds(0, 0, xSize, ySize);
+		img1.getContentPane().add(new JLabel(new ImageIcon(resources.SpriteObj(LS, 1920, 1080, 3, 1))));
+		img1.setBounds(0, 0, xSize, ySize);*/
 		
-		img1.setVisible(true);
-		resources.EnvironmentImage();
-		resources.ItemImage();
-		resources.PlayerImage();
-		resources.BillImage();
-		resources.BossImage();
-		img2.setVisible(true);
-		resources.ScreenImage();
-		img3.setVisible(true);
-		resources.WeatherImage();
+		//img1.setVisible(true);
+		resources.level1Image();
+		resources.menuImage();
+		
 		menu = new Menu();
 		sh = new SpriteHandler();
 		si = new ScreenItems();
@@ -103,9 +91,7 @@ public class MainGame extends Canvas implements Runnable {
 			Enemies.projR[i]=false;
 		}
 		
-		img1.setVisible(false);
-		img2.setVisible(false);
-		img3.setVisible(false);
+		//img1.setVisible(false);
 		state = StateClass.MENU;
 	}
 	

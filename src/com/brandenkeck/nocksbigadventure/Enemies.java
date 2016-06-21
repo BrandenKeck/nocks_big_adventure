@@ -443,9 +443,10 @@ public class Enemies {
 		SJy[k]=y;
 		SJr[k]=true;
 		SJhealth[k]=health;
-		if(MainGame.nextState == StateClass.LEVEL1){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.LSJStill, 80, 80, 1, 1);}
+		if(MainGame.nextState == StateClass.LEVEL1){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.PSJStill, 80, 80, 1, 1);}
 		else if(MainGame.nextState == StateClass.LEVEL2){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.BSJStill, 80, 80, 1, 1);}
-		else{charSJ[k] = ResourceManager.SpriteObj(ResourceManager.PSJStill, 80, 80, 1, 1);}
+		else if(MainGame.nextState == StateClass.LEVEL4){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.SJStill, 80, 80, 1, 1);}
+		else{charSJ[k] = ResourceManager.SpriteObj(ResourceManager.LSJStill, 80, 80, 1, 1);}
 		SJ[k] = new Rectangle(SJx[k], SJy[k], (int) (80*MainGame.xScalingFactor), (int) (80*MainGame.yScalingFactor));
 		sjctc[k]=1;
 	}
@@ -503,9 +504,10 @@ public class Enemies {
 			if(RAWctc == 0){sjctc[k]++;}
 			if(sjctc[k]>3){
 				sjctc[k]=3;
-				if(MainGame.state == StateClass.LEVEL1){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.LSJJump, 80, 80, sjctc[k], 1);}
+				if(MainGame.state == StateClass.LEVEL1){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.PSJJump, 80, 80, sjctc[k], 1);}
 				else if(MainGame.state == StateClass.LEVEL2){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.BSJJump, 80, 80, sjctc[k], 1);}
-				else{charSJ[k] = ResourceManager.SpriteObj(ResourceManager.PSJJump, 80, 80, sjctc[k], 1);}
+				else if(MainGame.state == StateClass.LEVEL4){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.SJJump, 80, 80, sjctc[k], 1);}
+				else{charSJ[k] = ResourceManager.SpriteObj(ResourceManager.LSJJump, 80, 80, sjctc[k], 1);}
 				sjctc[k]=1;
 				int nR = randNum.nextInt(4);
 				SJvely[k] = -25 - 5*nR;
@@ -514,9 +516,10 @@ public class Enemies {
 				sjticker[k] = 1;
 			}
 			else{
-				if(MainGame.state == StateClass.LEVEL1){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.LSJJump, 80, 80, sjctc[k], 1);}
+				if(MainGame.state == StateClass.LEVEL1){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.PSJJump, 80, 80, sjctc[k], 1);}
 				else if(MainGame.state == StateClass.LEVEL2){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.BSJJump, 80, 80, sjctc[k], 1);}
-				else{charSJ[k] = ResourceManager.SpriteObj(ResourceManager.PSJJump, 80, 80, sjctc[k], 1);}
+				else if(MainGame.state == StateClass.LEVEL4){charSJ[k] = ResourceManager.SpriteObj(ResourceManager.SJJump, 80, 80, sjctc[k], 1);}
+				else{charSJ[k] = ResourceManager.SpriteObj(ResourceManager.LSJJump, 80, 80, sjctc[k], 1);}
 				}
 		
 		}
@@ -536,9 +539,10 @@ public class Enemies {
 			sjctc[k]=15;
 		}
 		
-		if(MainGame.state == StateClass.LEVEL1){ss=ResourceManager.LSJDeath;}
-		if(MainGame.state == StateClass.LEVEL2){ss=ResourceManager.BSJDeath;}
-		else{ss=ResourceManager.PSJDeath;}
+		if(MainGame.state == StateClass.LEVEL1){ss=ResourceManager.PSJDeath;}
+		else if(MainGame.state == StateClass.LEVEL2){ss=ResourceManager.BSJDeath;}
+		else if(MainGame.state == StateClass.LEVEL4){ss=ResourceManager.SJDeath;}
+		else{ss=ResourceManager.LSJDeath;}
 		
 		returnimg = ResourceManager.SpriteObj(ss, 80, 80, sjctc[k], 1);
 		return returnimg;

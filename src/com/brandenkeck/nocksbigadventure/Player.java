@@ -746,7 +746,7 @@ public class Player {
 		break;
 		}
 
-			g.drawImage(SpriteObj(ss, w, ss.getHeight(), j, 1), x-xOffset, y, (int) ss.getWidth()*MainGame.xScalingFactor, (int) ss.getHeight()*MainGame.yScalingFactor, null);
+			g.drawImage(SpriteObj(ss, w, ss.getHeight(), j, 1), x-xOffset, y, (int) (w*MainGame.xScalingFactor), (int) (ss.getHeight()*MainGame.yScalingFactor), null);
 		
 	}
 	
