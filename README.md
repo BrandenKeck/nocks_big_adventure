@@ -12,9 +12,9 @@ Use of BufferStrategy and Graphics to perform actual game rendering
 Practice with memory allocation using garbage collection to allow the game to perform at default heap size  
   
 #Screenshots:  
-![Screen Shot 1](http://brandenkeck.com/res/img/screenshot/nocks%20big%20adventure/SSNA1.png)
-![Screen Shot 2](http://brandenkeck.com/res/img/screenshot/nocks%20big%20adventure/SSNA2.png)
-![Screen Shot 3](http://brandenkeck.com/res/img/screenshot/nocks%20big%20adventure/SSNA3.png)
-![Screen Shot 4](http://brandenkeck.com/res/img/screenshot/nocks%20big%20adventure/SSNA4.png)
-![Screen Shot 5](http://brandenkeck.com/res/img/screenshot/nocks%20big%20adventure/SSNA5.png)
-![Screen Shot 6](http://brandenkeck.com/res/img/screenshot/nocks%20big%20adventure/SSNA6.png)
+![Screen Shot 1](http://brandenkeck.com/res/img/screenshot/nocks_big_adventure/SSNA1.png)
+![Screen Shot 2](http://brandenkeck.com/res/img/screenshot/nocks_big_adventure/SSNA2.png)
+![Screen Shot 3](http://brandenkeck.com/res/img/screenshot/nocks_big_adventure/SSNA3.png)
+![Screen Shot 4](http://brandenkeck.com/res/img/screenshot/nocks_big_adventure/SSNA4.png)
+![Screen Shot 5](http://brandenkeck.com/res/img/screenshot/nocks_big_adventure/SSNA5.png)
+![Screen Shot 6](http://brandenkeck.com/res/img/screenshot/nocks_big_adventure/SSNA6.png)
